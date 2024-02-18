@@ -1,57 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
-    <style></style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1.css">
+  <title>Your Website</title>
 </head>
 <body>
-    <div class="menu">
-        <a href="#introduction">Introduction</a>
-        <a href="#who-we-are">Who we are</a>
-        <a href="#services">Services we provide</a>
-        <a href="#form">Form For any inquiries</a>
-        <a href="#socials">links to the socials</a>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="your-logo.png" alt="Your Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#who-we-are">Who We Are</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#our-services">Our Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#our-team">Our Team</a></li>
+  </ul>
+</nav>
+
+<section id="who-we-are" class="section">
+  <div class="section-content">
+    <h2>Who We Are</h2>
+    <p>Some text about who we are. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</section>
+
+<section id="why-us" class="section">
+  <div class="section-content">
+    <h2>Why Us</h2>
+    <div class="selling-points">
+      <div class="point">
+        <h3>Quality Service</h3>
+        <p>Our commitment to providing high-quality services sets us apart.</p>
+      </div>
+      <div class="point">
+        <h3>Customer Satisfaction</h3>
+        <p>Customer satisfaction is our top priority, and we strive to exceed expectations.</p>
+      </div>
+      <div class="point">
+        <h3>Innovation</h3>
+        <p>We embrace innovation to stay ahead in a constantly evolving business landscape.</p>
+      </div>
+      <div class="point">
+        <h3>Experienced Team</h3>
+        <p>Our team consists of experienced professionals dedicated to your success.</p>
+      </div>
     </div>
-    <div class="content">
-        <div class="introduction introduction" id="introduction">
-            <h1>Introduction</h1>
-            <p>Insert your introduction content here.</p>
-        </div>
-        <div class="who-we-are who-we-are" id="who-we-are">
-            <h1>Who we are</h1>
-            <p>Insert your who we are content here.</p>
-        </div>
-        <div class="services services" id="services">
-            <h1>Services we provide</h1>
-            <div class="service">
-                <h2>Service 1</h2>
-                <p>Insert description of service 1 here.</p>
-            </div>
-            <div class="service">
-                <h2>Service 2</h2>
-                <p>Insert description of service 2 here.</p>
-            </div>
-            <!-- Add more services as needed -->
-        </div>
-        <div class="form form" id="form">
-            <h1>Form For any inquiries</h1>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div class="socials socials" id="socials">
-            <h1>links to the socials</h1>
-            <a href="https://www.facebook.com/your-facebook-page" target="_blank">Facebook</a><br>
-            <a href="https://www.twitter.com/your-twitter-page" target="_blank">Twitter</a><br>
-            <a href="https://www.instagram.com/your-instagram-page" target="_blank">Instagram</a><br>
-            <!-- Add more social media links as needed -->
-        </div>
+  </div>
+</section>
+
+<section id="our-services" class="section">
+  <div class="section-content">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Service 1</h3>
+        <p>Description of Service 1.</p>
+      </div>
+      <div class="service">
+        <h3>Service 2</h3>
+        <p>Description of Service 2.</p>
+      </div>
+      <div class="service">
+        <h3>Service 3</h3>
+        <p>Description of Service 3.</p>
+      </div>
+      <div class="service">
+        <h3>Service 4</h3>
+        <p>Description of Service 4.</p>
+      </div>
+      <div class="service">
+        <h3>Service 5</h3>
+        <p>Description of Service 5.</p>
+      </div>
+      <div class="service">
+        <h3>Service 6</h3>
+        <p>Description of Service 6.</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="section-content">
+    <h2>Pricing</h2>
+    <form action="#" method="post" class="enquiry-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="number">Phone Number:</label>
+      <input type="tel" id="number" name="number" required>
+
+      <label for="query-subject">Query Subject:</label>
+      <input type="text" id="query-subject" name="query-subject" required>
+
+      <label for="query-details">Query Details:</label>
+      <textarea id="query-details" name="query-details" rows="4" required></textarea>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<section id="our-team" class="section">
+  <div class="section-content">
+    <h2>Our Team</h2>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="team-member-1.jpg" alt="Team Member 1">
+        <h3>John Doe</h3>
+        <p>Position</p>
+      </div>
+      <div class="team-member">
+        <img src="team-member-2.jpg" alt="Team Member 2">
+        <h3>Jane Doe</h3>
+        <p>Position</p>
+      </div>
+      <div class="team-member">
+        <img src="team-member-3.jpg" alt="Team Member 3">
+        <h3>Chris Smith</h3>
+        <p>Position</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/company/your-company" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.instagram.com/your_company" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="#">X</a>
+  </div>
+</footer>
+
 </body>
 </html>

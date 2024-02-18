@@ -1,39 +1,114 @@
 body {
-    font-family: Arial, sans-serif;
-}
-.menu {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
     background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-.menu a {
-    color: #fff;
+    position: fixed;
+    /* top: 0; */
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 50px; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+    float: left;
+  }
+  
+  .nav-links a {
     text-decoration: none;
-    margin-right: 10px;
-}
-.content {
-    margin: 20px 0;
-}
-.introduction {
-    background-color: #f8f9fa;
-    padding: 20px;
-}
-.who-we-are {
-    background-color: #e9ecef;
-    padding: 20px;
-}
-.services {
-    background-color: #dee2e6;
-    padding: 20px;
-}
-.service {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .section {
+    padding: 40px 0;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .service {
+    width: 30%;
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .enquiry-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .enquiry-form label {
+    margin-top: 10px;
+  }
+  
+  .enquiry-form input,
+  .enquiry-form textarea {
     margin-bottom: 10px;
-}
-.form {
-    background-color: #ced4da;
-    padding: 20px;
-}
-.socials {
-    background-color: #adb5bd;
-    padding: 20px;
-}
+    padding: 8px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 200px;
+    margin: 20px;
+  }
+  
+  .team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Optional: Add styles for hover effect */
+  .nav-links a:hover,
+  .social-links a:hover {
+    border-bottom: 2px solid white;
+  }
+  
