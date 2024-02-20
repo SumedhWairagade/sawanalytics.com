@@ -38,8 +38,9 @@ body {
   
   .section {
     padding: 40px 0;
-    background-color: #f2f2f2;
     text-align: center;
+    height: 92vh;
+    width: 100%;
   }
   
   .section-content {
@@ -114,3 +115,22 @@ body {
     border-bottom: 2px solid white;
   }
   
+
+  #introduction{
+    background-color: green;
+  }
+  #who-we-are{
+    background-color: yellow;
+  }
+  #why-us{
+    background-color: red;
+  }
+  #our-services{
+    background-color: blue;
+  }
+  #pricing{
+    background-color: violet;
+  }
+  #our-team{
+    background-color: orange;
+  }
