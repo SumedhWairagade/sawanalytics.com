@@ -37,15 +37,24 @@ body {
   }
   
   .section {
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
-    height: 92vh;
+    height: 96vh;
     width: 100%;
+  }
+
+  .introsection{
+    max-width: 63%;
+    margin: 0 auto;
+    line-height: 1.9;
+    display: inline-block;
   }
   
   .section-content {
-    max-width: 800px;
+    max-width: 65%;
     margin: 0 auto;
+    line-height: 1.9;
+    display: inline-block;
   }
   
   .services {
@@ -133,4 +142,15 @@ body {
   }
   #our-team{
     background-color: orange;
+  }
+  h1{
+    font-family: Medio;
+    font-size: 10vh; 
+  }
+  h3{
+    font-size: 4vh;
+  }
+  p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 3vh;
   }
