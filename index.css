@@ -111,5 +111,7 @@ footer ul{
 /*HEADER ENDS HERE*/
 
 /*DESCRIPTION STARTS HERE*/
-
+.description{
+    width:100%;
+}
 /*DESCRIPTION ENDS HERE*/
