@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    height: 100%;
+    width:100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/*NAVBAR STARTS HERE*/
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    max-height: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+} 
+.nav-links li {
+    margin-right: 20px;
+    float: left;
+}
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+}
+/*NAVBAR ENDS HERE*/
+
+/*FOOTER STARTS HERE*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 97vw;
+}
+.row a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+hr.solid {
+    border-top: 0.5px solid #bbb;
+    opacity: 0.3;
+}
+.column{
+    float: left;
+}
+.descripted{
+    width: 35%;
+    padding: 5%;
+    text-align: left;
+} 
+.footer-services{
+    width: 17%;
+    padding: 5%;
+} 
+.footer-company{
+    width: 17%;
+    padding: 5%;
+}
+hr{
+    width: 97vw;
+}
+footer ul{
+    list-style-type: none;
+    text-align: left;
+    line-height: 1.8;
+}
+/*FOOTER ENDS HERE*/
+
+/*HERO SECTION STARTS HERE*/
+#Hero{
+    background: linear-gradient(to bottom right, #ee5b2b, #fbbf24);
+    padding: 7% 6% 3% 6%;
+    text-align: center;
+}
+#Hero h1{
+    color: #fff;
+    opacity: 95%;
+}
+#Hero p{
+    color: #fff;
+    opacity: 70%;
+}
+.hero-button{
+    align-items: center;
+    background-clip: padding-box;
+    color: #ee5b2b;
+    background: #fff;
+    border-radius: .25rem;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    opacity: 99%;
+    padding: 1.5%;
+    font-size: medium;
+}
+.hero-button:hover,
+.hero-button:focus {
+  opacity: 89%;
+}
+.hero-button:hover {
+  transform: translateY(-1px);
+}
+/*HEADER ENDS HERE*/
+
+/*DESCRIPTION STARTS HERE*/
+
+/*DESCRIPTION ENDS HERE*/
