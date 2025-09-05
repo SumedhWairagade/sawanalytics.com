@@ -1,179 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link rel="stylesheet" href="1.css">-->
-  <link rel="stylesheet" href="index.css">
-  <title>SAW Analytics</title>
-  <link rel="icon" href="logo.png" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="1.css">-->
+    <link rel="stylesheet" href="index.css">
+    <title>SAW Analytics</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+  </head>
+  <body>
 
-<nav class="navbar">
-  <div class="logo">
-    <a href="#introduction"><img src="logo.png" alt="Your Logo"></a> SAW Analytics
-  </div>
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Case Studies</a></li>
-    <li><a href="#">Careers</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><button type="button">Request Consultation</button></li>
-    <li><a href="#who-we-are">Who We Are</a></li>
-    <li><a href="#why-us">Why Us</a></li>
-    <li><a href="#our-services">Our Services</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-  </ul>
-</nav>
-<section id="Hero" class="section">
-  <div class="introsection">
-    <h1>Translate Data into Strategy</h1>
-    <p>Comprehensive analytics and insights services to help businesses make data-driven decisions across finance, operations, strategy, and more.</p>
-    <button type="button" class="hero-button">Get Started Today &#8594</button>
-    <button type="button" class="hero-button">Explore Services</button>
-  </div>
-</section>
-<section id="description" class="section">
-  <div class="desc-div">
-    <div class="desc-tile">
-      <div class="desc-val">500+</div>
-      <div class="desc-title">Projects Completed</div>
-    </div>
-    <div>
-      <div class="desc-val">150+</div>
-      <div class="desc-title">Happy Clients</div>
-    </div>
-    <div>
-      <div class="desc-val">25+</div>
-      <div class="desc-title">Industries Served</div>
-    </div>
-    <div>
-      <div class="desc-val">98%</div>
-      <div class="desc-title">Client Satisfaction</div>
-    </div>
-  </div>
-</section>
-
-<!--<section id="why-us" class="section">
-  <div class="why-section">
-    <h1>Our Values</h1>
-    <ol class="selling-points">
-      <li class="qs">We are commited to provide high-<b>quality</b> services.</li>
-      <li class="cs"><b>Customer Satisfaction</b> is our top priority, and we strive to exceed expectations.</li>
-      <li class="in">We embraced <b>innovation</b> to stay ahead in a constantly evolving business landscape.</li>
-    </ol>
-  </div>
-</section>-->
-
-<section id="our-services" class="section">
-  <div class="section-content">
-    <h1 class="serquo">Services</h1>
-    <div class="services">
-      <div class="service">
-        <h3>Finance Analytics</h3>
-        <p>Optimize your Finances</p>
+    <nav class="navbar">
+      <a href="#Hero" class="logo"><img src="logo.png" alt="Your Logo"><span>SAW Analytics</span></a>
+      <div class="sp-nav">
+        <a href="#" class="curr-tab">Home</a>
+          <a href="about.html" class="non-curr">About</a>
+          <a href="services.html" class="non-curr">Services</a>
+          <a href="case-studies.html" class="non-curr">Case Studies</a>
+          <a href="careers.html" class="non-curr">Careers</a>
+          <a href="contact.html" class="non-curr">Contact</a>
+          <button type="button">Request Consultation</button>
+        </ul>
       </div>
-      <div class="service">
-        <h3>Customer Analytics</h3>
-        <p>Understand Customers</p>
+    </nav>
+
+    <section id="Hero" class="section">
+      <div class="introsection">
+        <h1>Translate Data into Strategy</h1>
+        <p>Comprehensive analytics and insights services to help businesses make data-driven decisions across finance, operations, strategy, and more.</p>
+        <div class="introsection-buttons">
+          <button type="button" class="hero-button">Get Started Today &#8594</button>
+          <button type="button" class="hero-button" onclick="window.location.href='services.html'">Explore Services</button>
+        </div>
       </div>
-      <div class="service">
-        <h3>Competitors Analytics</h3>
-        <p>Know your Commpetition</p>
+    </section>
+
+    <section id="description" class="section">
+      <div class="desc-div">
+        <div class="desc-tile">
+          <div class="desc-val">500+</div>
+          <div class="desc-title">Projects Completed</div>
+        </div>
+        <div class="desc-tile">
+          <div class="desc-val">150+</div>
+          <div class="desc-title">Happy Clients</div>
+        </div>
+        <div class="desc-tile">
+          <div class="desc-val">25+</div>
+          <div class="desc-title">Industries Served</div>
+        </div>
+        <div class="desc-tile">
+          <div class="desc-val">98%</div>
+          <div class="desc-title">Client Satisfaction</div>
+        </div>
+        <div class="desc-last"></div>
       </div>
-      <div class="service">
-        <h3>Peoples Analytics</h3>
-        <p>Recognize Employees</p>
+    </section>
+
+    <section id="our-services" class="section">
+      <div class="section-content">
+        <h1 class="ser-title">Our Analytics Services</h1>
+        <p class="ser-des">We provide end-to-end analytics solutions across key business functions to drive growth and efficiency.</p>
+        <div class="services">
+          <div class="service">
+            <h3>Financial Analytics</h3>
+            <p>Revenue forecasting, risk assessment, and financial modeling to drive profitability.</p>
+            <a href="services.html#finance-analytics">Learn More</a>
+          </div>
+          <div class="service">
+            <h3>Operations Analytics</h3>
+            <p>Supply chain optimization and operational efficiency analysis.</p>
+            <a href="services.html#operations-analytics">Learn More</a>
+          </div>
+          <div class="service">
+            <h3>Business Strategy</h3>
+            <p>KPI tracking and decision intelligence for strategic planning.</p>
+            <a href="services.html#business-strategy-analytics">Learn More</a>
+          </div>
+          <div class="service">
+            <h3>People & HR Analytics</h3>
+            <p>Employee performance insights and retention analysis.</p>
+            <a href="services.html#people-&-hr-analytics">Learn More</a>
+          </div>
+          <div class="service">
+            <h3>Customer Insights</h3>
+            <p>Behavior analysis and customer segmentation strategies.</p>
+            <a href="services.html#customer-analytics">Learn More</a>
+          </div>
+          <div class="service">
+            <h3>Market Research</h3>
+            <p>Competitive analysis and market positioning insights.</p>
+            <a href="services.html#market-research">Learn More</a>
+          </div>
+        </div>
+        <div class="ser-button">
+          <button class="cta-b">Request Custom Analytics Solution &#8594</button>
+        </div>
       </div>
-      <div class="service">
-        <h3>Operations Analytics</h3>
-        <p>Improve your Operations</p>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="t-main">
+        <div class="t-head">
+          <h2>What Our Clients Say</h2>
+          <p>Stories from businesses transforming their operations with SAW Analytics.</p>
+        </div>
+        <div class="t-container">
+          <div class="container">
+            <div class="t-title">
+              "SAW Analytics helped us unlock valuable insights from our data, leading to a 30% increase in revenue."
+            </div>
+            <p>- John Smith, CEO of Tech Innovations Inc.</p>
+            <a href="case-studies.html#innovate-tech">Read Case Study &#8594</a>
+          </div>
+          <div class="container">
+            <div class="t-title">
+              "Their expertise in financial analytics transformed our risk management processes and improved our bottom line."
+            </div>
+            <p>- Emily Johnson, CFO of Global Finance Corp.</p>
+            <a href="case-studies.html#global-fincorp">Read Case Study &#8594</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <!--<section id="pricing" class="section">
+      <div class="section-content">
+        <h1 class="serquo ">Get your Quote</h1>
+        <form action="https://script.google.com/macros/s/AKfycbx8pPeKD-k59QxC4rFEvUOIiBTNw8bOWm4bHqzgwilqeC325_3QSFPvx9pM2o1cDQrBQg/exec " method="post" class="enquiry-form">
+          <span>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+          </span>
 
-<!--<section id="pricing" class="section">
-  <div class="section-content">
-    <h1 class="serquo ">Get your Quote</h1>
-    <form action="https://script.google.com/macros/s/AKfycbx8pPeKD-k59QxC4rFEvUOIiBTNw8bOWm4bHqzgwilqeC325_3QSFPvx9pM2o1cDQrBQg/exec " method="post" class="enquiry-form">
-      <span>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="Name" required>
-      </span>
+          <span>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+          </span>
 
-      <span>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="Email" required>
-      </span>
+          <span>
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="Number" required>
+          </span>
 
-      <span>
-        <label for="number">Phone Number:</label>
-        <input type="tel" id="number" name="Number" required>
-      </span>
+          <span>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="Address" required>
+          </span>
 
-      <span>
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="Address" required>
-      </span>
+          <span>
+            <label for="query-subject">Query Subject:</label>
+            <input type="text" id="query-subject" name="QuerySubject" required>
+          </span>
 
-      <span>
-        <label for="query-subject">Query Subject:</label>
-        <input type="text" id="query-subject" name="QuerySubject" required>
-      </span>
+          <span>
+            <textarea id="query-details" name="QueryDetails" rows="4">Query in Details(Optional)</textarea>
+          </span>
 
-      <span>
-        <textarea id="query-details" name="QueryDetails" rows="4">Query in Details(Optional)</textarea>
-      </span>
-
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</section>-->
-
-<footer>
-  <div class="row">
-    <div class="column descripted">
-      <div class="logo">
-        <img src="logo.png" alt="Your Logo"> SAW Analytics
+          <button type="submit">Submit</button>
+        </form>
       </div>
+    </section>-->
+
+    <section id="cta" class="section">
       <div>
-        <p>Translating Data and Strategy. We provide comprehensive analytics and insights services to help businesses make data-driven decisions.</p>
-        <p>sawofficialbusiness@gmail.com</p>
-        <P>+1(682)563-4874</P>
-        <p>Minneapolis, MN</p>
+        <h2>Ready to Transform Your Business with Data?</h2>
+        <p>Contact us today to schedule a consultation and discover how SAW Analytics can drive your success.</p>
+        <button>Request a Free Consultation  &#8594</button>
       </div>
-      <a href="https://www.linkedin.com/in/sumedh-wairagade-72237a2b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://www.instagram.com/sawanalytics/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://twitter.com/SAWAnalytics" target="_blank" rel="noopener noreferrer">X</a>
-    </div>
-    <div class="column footer-services">
-      <h1>Services</h1>
-      <ul>
-        <li>Financial Analytics</li>
-        <li>Operations Analytics</li>
-        <li>Business Strategy</li>
-        <li>HR Analytics</li>
-      </ul>
-    </div>
-    <div class="column footer-company">
-      <h1>Company</h1>
-      <ul>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Case Studies</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-  </div>
-  <hr class="solid">
-  <div class="copyright-div">
-    <small>&copy; 2025 SAW Analytics. All Rights Reserved.</small>
-  </div>
-</footer>
+    </section>
 
-</body>
+    <footer>
+      <div class="footer-c">
+        <div class="f-row1">
+          <div class="f-col1">
+            <div class="f-comp-ttl">
+              <img src="logo.png" alt="Your Logo">
+              <span>SAW Analytics</span>
+            </div>
+            <p class="f-comp-p">Translating Data into Strategy. We provide comprehensive analytics and insights services to help businesses make data-driven decisions.</p>
+            <div class="f-comp-dtls">
+              <p>📧 sawofficialbusiness@gmail.com</p>
+              <p>📞 +1(682)563-4874</p>
+              <p>📍 Minneapolis, MN</p>
+            </div>
+          </div>
+          <div class="f-col2">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html#finance-analytics">Financial Analytics</a></li>
+              <li><a href="services.html#operations-analytics">Operations Analytics</a></li>
+              <li><a href="services.html#business-strategy-analytics">Business Strategy</a></li>
+              <li><a href="services.html#people-&-hr-analytics">HR Analytics</a></li>
+            </ul>
+          </div>
+          <div class="f-col3">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="case-studies.html">Case Studies</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="f-row2">
+          <p>&copy; 2025 SAW Analytics. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <div role="alertdialog" id="radix-:r0:" aria-describedby="radix-:r2:" aria-labelledby="radix-:r1:" data-state="open" data-lov-id="src/components/ConsultationForm.tsx:129:6" data-lov-name="AlertDialogContent" data-component-path="src/components/ConsultationForm.tsx" data-component-line="129" data-component-file="ConsultationForm.tsx" data-component-name="AlertDialogContent" data-component-content="%7B%22className%22%3A%22max-w-md%20max-h-%5B90vh%5D%20overflow-y-auto%22%7D" class="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg max-w-md max-h-[90vh] overflow-y-auto" tabindex="-1" style="pointer-events: auto;">
+      <div data-lov-id="src/components/ConsultationForm.tsx:130:8" data-lov-name="AlertDialogHeader" data-component-path="src/components/ConsultationForm.tsx" data-component-line="130" data-component-file="ConsultationForm.tsx" data-component-name="AlertDialogHeader" data-component-content="%7B%7D" class="flex flex-col space-y-2 text-center sm:text-left">
+        <h2 id="radix-:r1:" data-lov-id="src/components/ConsultationForm.tsx:131:10" data-lov-name="AlertDialogTitle" data-component-path="src/components/ConsultationForm.tsx" data-component-line="131" data-component-file="ConsultationForm.tsx" data-component-name="AlertDialogTitle" data-component-content="%7B%22text%22%3A%22Request%20Consultation%22%2C%22className%22%3A%22text-saw-navy%22%7D" class="text-lg font-semibold text-saw-navy">Request Consultation</h2>
+      </div>
+      <form data-lov-id="src/components/ConsultationForm.tsx:134:8" data-lov-name="form" data-component-path="src/components/ConsultationForm.tsx" data-component-line="134" data-component-file="ConsultationForm.tsx" data-component-name="form" data-component-content="%7B%22className%22%3A%22space-y-4%22%7D" class="space-y-4">
+        <div data-lov-id="src/components/ConsultationForm.tsx:135:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="135" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
+          <label data-lov-id="src/components/ConsultationForm.tsx:136:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="136" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Name%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="name">Name *</label>
+          <input data-lov-id="src/components/ConsultationForm.tsx:137:12" data-lov-name="Input" data-component-path="src/components/ConsultationForm.tsx" data-component-line="137" data-component-file="ConsultationForm.tsx" data-component-name="Input" data-component-content="%7B%22placeholder%22%3A%22Your%20full%20name%22%7D" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" id="name" placeholder="Your full name" required="" value="">
+        </div>
+        <div data-lov-id="src/components/ConsultationForm.tsx:146:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="146" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
+          <label data-lov-id="src/components/ConsultationForm.tsx:147:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="147" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Email%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="email">Email *</label>
+          <input data-lov-id="src/components/ConsultationForm.tsx:148:12" data-lov-name="Input" data-component-path="src/components/ConsultationForm.tsx" data-component-line="148" data-component-file="ConsultationForm.tsx" data-component-name="Input" data-component-content="%7B%22placeholder%22%3A%22your.email%40company.com%22%7D" type="email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" id="email" placeholder="your.email@company.com" required="" value="">
+        </div>
+        <div data-lov-id="src/components/ConsultationForm.tsx:158:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="158" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
+          <label data-lov-id="src/components/ConsultationForm.tsx:159:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="159" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Phone%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="phone">Phone *</label>
+          <input data-lov-id="src/components/ConsultationForm.tsx:160:12" data-lov-name="Input" data-component-path="src/components/ConsultationForm.tsx" data-component-line="160" data-component-file="ConsultationForm.tsx" data-component-name="Input" data-component-content="%7B%22placeholder%22%3A%22Your%20phone%20number%22%7D" type="tel" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" id="phone" placeholder="Your phone number" required="" value="">
+        </div>
+        <div data-lov-id="src/components/ConsultationForm.tsx:170:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="170" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
+          <label data-lov-id="src/components/ConsultationForm.tsx:171:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="171" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Message%2FRequest%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="message">Message/Request *</label>
+          <textarea data-lov-id="src/components/ConsultationForm.tsx:172:12" data-lov-name="Textarea" data-component-path="src/components/ConsultationForm.tsx" data-component-line="172" data-component-file="ConsultationForm.tsx" data-component-name="Textarea" data-component-content="%7B%22placeholder%22%3A%22Tell%20us%20about%20your%20analytics%20needs%20or%20questions...%22%2C%22className%22%3A%22min-h-%5B100px%5D%22%7D" class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[100px]" id="message" placeholder="Tell us about your analytics needs or questions..." required=""></textarea>
+        </div>
+        <div data-lov-id="src/components/ConsultationForm.tsx:182:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="182" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%22className%22%3A%22flex%20gap-2%20pt-4%22%7D" class="flex gap-2 pt-4">
+          <button data-lov-id="src/components/ConsultationForm.tsx:183:12" data-lov-name="Button" data-component-path="src/components/ConsultationForm.tsx" data-component-line="183" data-component-file="ConsultationForm.tsx" data-component-name="Button" data-component-content="%7B%22text%22%3A%22Cancel%22%2C%22className%22%3A%22flex-1%22%7D" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex-1" type="button">Cancel</button>
+          <button data-lov-id="src/components/ConsultationForm.tsx:191:12" data-lov-name="Button" data-component-path="src/components/ConsultationForm.tsx" data-component-line="191" data-component-file="ConsultationForm.tsx" data-component-name="Button" data-component-content="%7B%7D" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 flex-1 saw-gradient text-white hover:opacity-90" type="submit">Submit Request</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
