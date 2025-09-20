@@ -11,7 +11,7 @@
   <body>
 
     <nav class="navbar">
-      <a href="#Hero" class="logo"><img src="logo.png" alt="Your Logo"><span>SAW Analytics</span></a>
+      <a class="logo"><img src="logo.png" alt="Your Logo"><span>SAW Analytics</span></a>
       <div class="sp-nav">
         <a href="#" class="curr-tab">Home</a>
           <a href="about.html" class="non-curr">About</a>
@@ -19,7 +19,7 @@
           <a href="case-studies.html" class="non-curr">Case Studies</a>
           <a href="careers.html" class="non-curr">Careers</a>
           <a href="contact.html" class="non-curr">Contact</a>
-          <button type="button">Request Consultation</button>
+          <button id="req-consult" type="button">Request Consultation</button>
         </ul>
       </div>
     </nav>
@@ -123,43 +123,6 @@
         </div>
       </div>
     </section>
-    <!--<section id="pricing" class="section">
-      <div class="section-content">
-        <h1 class="serquo ">Get your Quote</h1>
-        <form action="https://script.google.com/macros/s/AKfycbx8pPeKD-k59QxC4rFEvUOIiBTNw8bOWm4bHqzgwilqeC325_3QSFPvx9pM2o1cDQrBQg/exec " method="post" class="enquiry-form">
-          <span>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" required>
-          </span>
-
-          <span>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="Email" required>
-          </span>
-
-          <span>
-            <label for="number">Phone Number:</label>
-            <input type="tel" id="number" name="Number" required>
-          </span>
-
-          <span>
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="Address" required>
-          </span>
-
-          <span>
-            <label for="query-subject">Query Subject:</label>
-            <input type="text" id="query-subject" name="QuerySubject" required>
-          </span>
-
-          <span>
-            <textarea id="query-details" name="QueryDetails" rows="4">Query in Details(Optional)</textarea>
-          </span>
-
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>-->
 
     <section id="cta" class="section">
       <div>
@@ -208,33 +171,87 @@
         </div>
       </div>
     </footer>
-    
-    <div role="alertdialog" id="radix-:r0:" aria-describedby="radix-:r2:" aria-labelledby="radix-:r1:" data-state="open" data-lov-id="src/components/ConsultationForm.tsx:129:6" data-lov-name="AlertDialogContent" data-component-path="src/components/ConsultationForm.tsx" data-component-line="129" data-component-file="ConsultationForm.tsx" data-component-name="AlertDialogContent" data-component-content="%7B%22className%22%3A%22max-w-md%20max-h-%5B90vh%5D%20overflow-y-auto%22%7D" class="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg max-w-md max-h-[90vh] overflow-y-auto" tabindex="-1" style="pointer-events: auto;">
-      <div data-lov-id="src/components/ConsultationForm.tsx:130:8" data-lov-name="AlertDialogHeader" data-component-path="src/components/ConsultationForm.tsx" data-component-line="130" data-component-file="ConsultationForm.tsx" data-component-name="AlertDialogHeader" data-component-content="%7B%7D" class="flex flex-col space-y-2 text-center sm:text-left">
-        <h2 id="radix-:r1:" data-lov-id="src/components/ConsultationForm.tsx:131:10" data-lov-name="AlertDialogTitle" data-component-path="src/components/ConsultationForm.tsx" data-component-line="131" data-component-file="ConsultationForm.tsx" data-component-name="AlertDialogTitle" data-component-content="%7B%22text%22%3A%22Request%20Consultation%22%2C%22className%22%3A%22text-saw-navy%22%7D" class="text-lg font-semibold text-saw-navy">Request Consultation</h2>
+
+    <!--<section id="pricing" class="section">
+      <div class="section-content">
+        <h1 class="serquo ">Get your Quote</h1>
+        <form action="https://script.google.com/macros/s/AKfycbx8pPeKD-k59QxC4rFEvUOIiBTNw8bOWm4bHqzgwilqeC325_3QSFPvx9pM2o1cDQrBQg/exec " method="post" class="enquiry-form">
+          <span>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+          </span>
+
+          <span>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+          </span>
+
+          <span>
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="Number" required>
+          </span>
+
+          <span>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="Address" required>
+          </span>
+
+          <span>
+            <label for="query-subject">Query Subject:</label>
+            <input type="text" id="query-subject" name="QuerySubject" required>
+          </span>
+
+          <span>
+            <textarea id="query-details" name="QueryDetails" rows="4">Query in Details(Optional)</textarea>
+          </span>
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
-      <form data-lov-id="src/components/ConsultationForm.tsx:134:8" data-lov-name="form" data-component-path="src/components/ConsultationForm.tsx" data-component-line="134" data-component-file="ConsultationForm.tsx" data-component-name="form" data-component-content="%7B%22className%22%3A%22space-y-4%22%7D" class="space-y-4">
-        <div data-lov-id="src/components/ConsultationForm.tsx:135:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="135" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
-          <label data-lov-id="src/components/ConsultationForm.tsx:136:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="136" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Name%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="name">Name *</label>
-          <input data-lov-id="src/components/ConsultationForm.tsx:137:12" data-lov-name="Input" data-component-path="src/components/ConsultationForm.tsx" data-component-line="137" data-component-file="ConsultationForm.tsx" data-component-name="Input" data-component-content="%7B%22placeholder%22%3A%22Your%20full%20name%22%7D" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" id="name" placeholder="Your full name" required="" value="">
+    </section>-->
+    
+    <div class="form-background hidden"></div>
+    <div class="form-popup hidden">
+      <div>
+        <h2>Request Consultation</h2>
+      </div>
+      <form action="https://script.google.com/macros/s/AKfycbx8pPeKD-k59QxC4rFEvUOIiBTNw8bOWm4bHqzgwilqeC325_3QSFPvx9pM2o1cDQrBQg/exec " method="post" class="enquiry-form">
+        <div class="form-name">
+          <label>Name *</label>
+          <input class="name-input" placeholder="Your full name" required="" value="">
         </div>
-        <div data-lov-id="src/components/ConsultationForm.tsx:146:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="146" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
-          <label data-lov-id="src/components/ConsultationForm.tsx:147:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="147" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Email%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="email">Email *</label>
-          <input data-lov-id="src/components/ConsultationForm.tsx:148:12" data-lov-name="Input" data-component-path="src/components/ConsultationForm.tsx" data-component-line="148" data-component-file="ConsultationForm.tsx" data-component-name="Input" data-component-content="%7B%22placeholder%22%3A%22your.email%40company.com%22%7D" type="email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" id="email" placeholder="your.email@company.com" required="" value="">
+        <div class="form-email">
+          <label>Email *</label>
+          <input class="email-input" placeholder="your.email@company.com" required="" value="">
         </div>
-        <div data-lov-id="src/components/ConsultationForm.tsx:158:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="158" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
-          <label data-lov-id="src/components/ConsultationForm.tsx:159:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="159" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Phone%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="phone">Phone *</label>
-          <input data-lov-id="src/components/ConsultationForm.tsx:160:12" data-lov-name="Input" data-component-path="src/components/ConsultationForm.tsx" data-component-line="160" data-component-file="ConsultationForm.tsx" data-component-name="Input" data-component-content="%7B%22placeholder%22%3A%22Your%20phone%20number%22%7D" type="tel" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" id="phone" placeholder="Your phone number" required="" value="">
+        <div class="form-phn">
+          <label>Phone *</label>
+          <input class="phone" placeholder="Your phone number" required="" value="">
         </div>
-        <div data-lov-id="src/components/ConsultationForm.tsx:170:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="170" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%7D">
-          <label data-lov-id="src/components/ConsultationForm.tsx:171:12" data-lov-name="Label" data-component-path="src/components/ConsultationForm.tsx" data-component-line="171" data-component-file="ConsultationForm.tsx" data-component-name="Label" data-component-content="%7B%22text%22%3A%22Message%2FRequest%20*%22%7D" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="message">Message/Request *</label>
-          <textarea data-lov-id="src/components/ConsultationForm.tsx:172:12" data-lov-name="Textarea" data-component-path="src/components/ConsultationForm.tsx" data-component-line="172" data-component-file="ConsultationForm.tsx" data-component-name="Textarea" data-component-content="%7B%22placeholder%22%3A%22Tell%20us%20about%20your%20analytics%20needs%20or%20questions...%22%2C%22className%22%3A%22min-h-%5B100px%5D%22%7D" class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[100px]" id="message" placeholder="Tell us about your analytics needs or questions..." required=""></textarea>
+        <div class="form-msg">
+          <label>Message/Request *</label>
+          <textarea class="message" placeholder="Tell us about your analytics needs or questions..." required=""></textarea>
         </div>
-        <div data-lov-id="src/components/ConsultationForm.tsx:182:10" data-lov-name="div" data-component-path="src/components/ConsultationForm.tsx" data-component-line="182" data-component-file="ConsultationForm.tsx" data-component-name="div" data-component-content="%7B%22className%22%3A%22flex%20gap-2%20pt-4%22%7D" class="flex gap-2 pt-4">
-          <button data-lov-id="src/components/ConsultationForm.tsx:183:12" data-lov-name="Button" data-component-path="src/components/ConsultationForm.tsx" data-component-line="183" data-component-file="ConsultationForm.tsx" data-component-name="Button" data-component-content="%7B%22text%22%3A%22Cancel%22%2C%22className%22%3A%22flex-1%22%7D" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex-1" type="button">Cancel</button>
-          <button data-lov-id="src/components/ConsultationForm.tsx:191:12" data-lov-name="Button" data-component-path="src/components/ConsultationForm.tsx" data-component-line="191" data-component-file="ConsultationForm.tsx" data-component-name="Button" data-component-content="%7B%7D" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 flex-1 saw-gradient text-white hover:opacity-90" type="submit">Submit Request</button>
+        <div class="form-buttons">
+          <button class="close-button" id="cancel-form" type="button">Cancel</button>
+          <button class="submit-button" type="submit">Submit Request</button>
         </div>
       </form>
     </div>
+    <script type="text/javascript">
+      const showButton = document.getElementById('req-consult');
+      const elementsToShow = document.querySelectorAll('.form-popup, .form-background');
+      const hideButton = document.getElementById('cancel-form');
+      showButton.addEventListener('click', () => {
+        elementsToShow.forEach(element => {
+          element.classList.remove('hidden');
+        });
+      });
+      hideButton.addEventListener('click', () => {
+        elementsToShow.forEach(element => {
+          element.classList.add('hidden');
+        });
+      });
+    </script>
   </body>
 </html>

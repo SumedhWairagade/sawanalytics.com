@@ -2910,3 +2910,143 @@ CAREERS PAGE CSS */
 /*CONTACT FORM ENDS HERE*/
 /* #################
 CONTACT PAGE CSS */
+
+
+/*POP-UP FORM STARTS HERE*/
+.form-popup.hidden, .form-background.hidden {
+    display: none;
+}
+.form-popup{
+    pointer-events: auto;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    box-shadow: var(--tw-shadow);
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    overflow-y: auto;
+    gap: 1rem;
+    transform: translate(-50%, -50%);
+    max-width: 28rem;
+    width: 100%;
+    max-height: 90vh;
+    display: grid;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+@media (min-width: 640px) {
+    .form-popup {
+        border-radius: .5rem;
+    }
+}
+.form-popup h2{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+}
+@media (min-width: 640px) {
+    .form-popup h2 {
+        text-align: left;
+    }
+}
+.form-name label, .form-email label, .form-msg label, .form-phn label{
+    line-height: 1;
+    font-weight: 500;
+    font-size: .875rem;
+}
+.form-name input, .form-email input, .form-phn input{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: calc(.5rem - 2px);
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+}
+@media (min-width: 768px) {
+    .form-name input, .form-email input, .form-phn input {
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+}
+.form-email, .form-phn, .form-msg {
+    margin-top: 1rem;
+}
+.form-msg textarea{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: calc(.5rem - 2px);
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    resize: vertical;
+}
+.form-buttons{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    gap: .5rem;
+}
+.close-button{
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: calc(.5rem - 2px);
+    white-space: nowrap;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0%;
+    display: inline-flex;
+    cursor: pointer;
+}
+.submit-button{
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #004080;
+    color: white;
+    background-image: linear-gradient(to right, #004080 0%, #11d4d4 50%, #2eb85c);
+    border: 0;
+    border-radius: calc(.5rem - 2px);
+    white-space: nowrap;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0%;
+    display: inline-flex;
+    cursor: pointer;
+}
+.form-background{
+    pointer-events: auto;
+    background-color: #000c;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+/*POP-UP FORM ENDS HERE*/
